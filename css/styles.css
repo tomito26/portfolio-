@@ -15,6 +15,7 @@
 }
 body{
     font-family: "Lato",sans-serif;
+    overflow-x: hidden;
 }
 
 .nav-container{
@@ -266,6 +267,20 @@ body{
     text-align: center;
     
 }
+.contacts input{
+    padding :8px 16px;
+    border: none;
+    background-color: #52b788;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+.contacts input:hover{
+    background-color: #40916c;
+}
+.contacts input{
+    font-size: 20px;
+}
 .contacts h2{
     font-size: 30px;
 }
@@ -298,8 +313,23 @@ body{
 .skills ul li {
     line-height: 30px;
 }
-.
-@media only screen and (max-width:768px){
+footer{
+    width: 100%;
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #111;
+    overflow: hidden;
+} 
+footer ul {
+  width: fit-content;
+  float: left;
+  padding-left: 20px;
+} 
+
+@media only screen and (max-width:375px){
+    body,html{
+        overflow-x: hidden;
+    }
     .nav-container{
         position: relative;
     }
@@ -382,5 +412,166 @@ body{
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .landing-content h1{
+        font-size: 38px;
+    }
+    .landing-content h2{
+        font-size: 35px;
+    }
+  
+    .about{
+        width: 360px;
+        margin:0;
+    }
+    .about-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.about-items .profile-picture{
+    height: 300px;
+    width: 200px;
+    
+    
+}
 
+.about-items p{
+    margin: 20px;
+    width: 300px;
+    line-height: 25px;
+    font-size: 16px;
+    font-family: "Lato",sans-serif;
+}
+.about-items .hobbies{
+    margin-top: 20px;
+    font-size: 16px;
+}
+.projects{
+    margin: 0 auto;
+    width: 300px;
+}
+.projects .heading{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+.gitsearch,.newsApp,.awward,.neighborhoodWatch,.todo{
+ display: flex;
+ flex-direction: column;
+
+}
+.gitsearch .git{
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+}
+.gitsearch .git-info{
+    width: 300px;
+    margin-left: 0;
+    
+}
+.git-info p{
+    margin-top: 10px;
+}
+.git-info{
+    margin-top: 20px;
+}
+
+.git img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.newsApp{
+    margin-top: 30px;
+}
+.newsApp .news{
+    height: 200px;
+    width: 300px;
+}
+.news img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+.news-info  {
+    width: 300px;
+    margin-top:  20px;
+    margin-left: 0;
+}
+.news-info p{
+    margin-top: 10px;
+}
+.award{
+    height: 200px;
+    width: 300px;
+
+}
+
+.award img{
+    height: 100%;
+    width: 100%;
+}
+.awward-info{
+    width:300px;
+    margin-left: 0;
+    margin-top: 20px;
+}
+.awward-info p{
+    margin-top: 10px;
+}
+.awward{
+    margin-top: 30px;
+}
+.neighborhood{
+    height: 200px;
+    width: 300px;
+}
+.neighborhood img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.neighborhood-info{
+    width: 300px;
+    margin-left: 0;
+    margin-top: 20px;
+}
+.neighborhood-info p{
+    margin-top: 10px;
+}
+.neighborhoodWatch{
+    margin-top: 30px;
+}
+.todo-img{
+    height: 200px;
+    width: 300px;
+}
+.todo-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.todo-info{
+    margin-left: 0;
+    width: 300px;
+    margin-top: 20px;
+}
+.todo-info h2{
+    font-size: 20px;
+}
+.todo-info p{
+    margin-top: 10px;
+}
+.todo{
+    margin-top: 30px;
+}
 }
